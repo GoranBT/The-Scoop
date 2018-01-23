@@ -1,0 +1,168 @@
+users:
+  Simon:
+    username: Goran
+    articleIds:
+      - 1
+    commentIds: []
+  goran:
+    username: goran
+    articleIds:
+      - 2
+      - 3
+    commentIds:
+      - 1
+  asdsadas:
+    username: asdsadas
+    articleIds: []
+    commentIds: []
+  blabla:
+    username: blabla
+    articleIds:
+      - 5
+      - 6
+    commentIds:
+      - 3
+      - 4
+  asdasdasdasd:
+    username: asdasdasdasd
+    articleIds:
+      - 7
+    commentIds:
+      - 5
+  ASDASDS:
+    username: ASDASDS
+    articleIds: []
+    commentIds: []
+  sadadasdas:
+    username: sadadasdas
+    articleIds:
+      - 8
+    commentIds:
+      - 6
+articles:
+  '1':
+    id: 1
+    title: foo
+    url: bar
+    username: Goran
+    commentIds: []
+    upvotedBy: []
+    downvotedBy:
+      - goran
+      - blabla
+    comments: []
+  '2':
+    id: 2
+    title: dsfsdfsfsff
+    url: sdfsdfsdfsdfsdfsdf
+    username: goran
+    commentIds:
+      - 1
+    upvotedBy:
+      - goran
+    downvotedBy:
+      - blabla
+    comments:
+      - &ref_0
+        id: 1
+        body: aadasdadasdasdas
+        username: goran
+        articleId: 2
+        upvotedBy:
+          - goran
+          - blabla
+        downvotedBy: []
+  '3':
+    id: 3
+    title: sadasdasd
+    url: sadasdasda
+    username: goran
+    commentIds: []
+    upvotedBy: []
+    downvotedBy:
+      - goran
+      - blabla
+  '4': null
+  '5':
+    id: 5
+    title: heyheytesttest
+    url: heytest
+    username: blabla
+    commentIds:
+      - 3
+      - 4
+    upvotedBy: []
+    downvotedBy:
+      - blabla
+    comments:
+      - &ref_1
+        id: 3
+        body: heyhey
+        username: blabla
+        articleId: 5
+        upvotedBy:
+          - blabla
+        downvotedBy: []
+      - &ref_2
+        id: 4
+        body: testingtestingrerererer
+        username: blabla
+        articleId: 5
+        upvotedBy:
+          - blabla
+        downvotedBy: []
+  '6':
+    id: 6
+    title: asdasdaasdasdas
+    url: asdasda
+    username: blabla
+    commentIds: []
+    upvotedBy: []
+    downvotedBy: []
+  '7':
+    id: 7
+    title: dasdasdasda11111
+    url: 'https://www.youtube.com/watch?v=ZGbWngbydf8'
+    username: asdasdasdasd
+    commentIds:
+      - 5
+    upvotedBy: []
+    downvotedBy:
+      - asdasdasdasd
+    comments:
+      - &ref_3
+        id: 5
+        body: SADSDASDA23232
+        username: asdasdasdasd
+        articleId: 7
+        upvotedBy: []
+        downvotedBy:
+          - asdasdasdasd
+  '8':
+    id: 8
+    title: testingasdasdas
+    url: testing
+    username: sadadasdas
+    commentIds:
+      - 6
+    upvotedBy: []
+    downvotedBy:
+      - sadadasdas
+    comments:
+      - &ref_4
+        id: 6
+        body: asdadasd2232
+        username: sadadasdas
+        articleId: 8
+        upvotedBy: []
+        downvotedBy:
+          - sadadasdas
+nextArticleId: 9
+comments:
+  '1': *ref_0
+  '2': null
+  '3': *ref_1
+  '4': *ref_2
+  '5': *ref_3
+  '6': *ref_4
+nextCommentId: 7
